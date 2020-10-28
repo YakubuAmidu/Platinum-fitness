@@ -16,7 +16,7 @@ class HomeScreen extends Component {
             </Text>
 
             <Text style={styles.textStyleTwo}>
-              Easy-to-use workout planner and tracker with automated and
+              Easy-to-use workout planner and tracker with automated rest and
               recovery control
             </Text>
 
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   },
   viewStyleOne: {
     paddingLeft: 15,
+    paddingRight: 15,
   },
   iconStyleOne: {
     fontSize: 80,
@@ -70,8 +71,18 @@ const styles = StyleSheet.create({
   },
   textStyleTwo: {
     color: "#fff",
+    fontSize: 18,
+    width: 360,
   },
-  viewStyleTwo: {},
+  viewStyleTwo: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 40,
+    borderRadius: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    backgroundColor: "#3d65ee",
+  },
   iconStyleTwo: {},
   textStyleThree: {},
   textStyleFour: {},

@@ -8,8 +8,9 @@ import {
 } from "react-native";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import ImageTwo from "../assets/ImageTwo.png";
+import GoalScreen from "./GoalScreen";
 
-const WorkoutScreen = () => {
+const WorkoutScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ImageBackground source={ImageTwo} style={styles.backgroundStyle}>
@@ -17,37 +18,40 @@ const WorkoutScreen = () => {
           <Text style={styles.textStyleOne}>
             How often do you usually work out ?
           </Text>
-          <TouchableOpacity style={styles.viewStyleTwo}>
+          <View style={styles.viewStyleTwo}>
             <FontAwesome name="user" style={styles.iconStyleOne} />
             <View style={styles.viewStyleThree}>
               <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
               <Text style={styles.textStyleFour}>I'm a little rusty</Text>
             </View>
-          </TouchableOpacity>
+          </View>
 
-          <TouchableOpacity style={styles.viewStyleTwo}>
+          <View style={styles.viewStyleTwo}>
             <MaterialCommunityIcons
               name="human-male"
               style={styles.iconStyleOne}
             />
             <View style={styles.viewStyleThree}>
-              <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
+              <Text style={styles.textStyleTwo}>2-4 workouts/week</Text>
               <Text style={styles.textStyleFour}>I'm a regular</Text>
             </View>
-          </TouchableOpacity>
+          </View>
 
-          <TouchableOpacity style={styles.viewStyleTwo}>
+          <View style={styles.viewStyleTwo}>
             <MaterialCommunityIcons
               name="human-handsup"
               style={styles.iconStyleOne}
             />
             <View style={styles.viewStyleThree}>
-              <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
+              <Text style={styles.textStyleTwo}>5+ workouts/week</Text>
               <Text style={styles.textStyleFour}>A man, a machine</Text>
             </View>
-          </TouchableOpacity>
+          </View>
 
-          <TouchableOpacity style={styles.touchableOpacity}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Goal")}
+            style={styles.touchableOpacity}
+          >
             <Text style={styles.textStyleFive}>Next</Text>
           </TouchableOpacity>
         </View>

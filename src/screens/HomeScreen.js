@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { View, ImageBackground, Text, StyleSheet } from "react-native";
+import {
+  View,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import { MaterialIcons, FontAwesome5 } from "@expo/vector-icons";
 import ImageOne from "../assets/ImageOne.png";
 
@@ -20,7 +26,7 @@ class HomeScreen extends Component {
               recovery control
             </Text>
 
-            <View style={styles.viewStyleTwo}>
+            <TouchableOpacity style={styles.viewStyleTwo}>
               <FontAwesome5
                 name="user-circle"
                 size={24}
@@ -30,7 +36,7 @@ class HomeScreen extends Component {
               <Text style={styles.textStyleThree}>
                 Personalized your account
               </Text>
-            </View>
+            </TouchableOpacity>
 
             <Text style={styles.textStyleFour}>Setup later</Text>
           </View>
@@ -53,6 +59,7 @@ const styles = StyleSheet.create({
   viewStyleOne: {
     paddingLeft: 15,
     paddingRight: 15,
+    paddingTop: 200,
   },
   iconStyleOne: {
     fontSize: 80,
@@ -71,21 +78,33 @@ const styles = StyleSheet.create({
   },
   textStyleTwo: {
     color: "#fff",
-    fontSize: 18,
+    fontSize: 20,
     width: 360,
   },
   viewStyleTwo: {
     flexDirection: "row",
     justifyContent: "center",
     marginTop: 40,
+    marginBottom: 20,
     borderRadius: 10,
-    paddingTop: 10,
-    paddingBottom: 10,
+    paddingTop: 17,
+    paddingBottom: 17,
     backgroundColor: "#3d65ee",
   },
   iconStyleTwo: {},
-  textStyleThree: {},
-  textStyleFour: {},
+  textStyleThree: {
+    marginHorizontal: 10,
+    textTransform: "capitalize",
+    fontSize: 20,
+    color: "#fff",
+    fontWeight: "bold",
+  },
+  textStyleFour: {
+    textAlign: "center",
+    fontSize: 25,
+    color: "#fff",
+    textTransform: "capitalize",
+  },
 });
 
 export default HomeScreen;

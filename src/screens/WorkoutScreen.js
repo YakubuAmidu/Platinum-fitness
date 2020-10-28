@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, ImageBackground, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import ImageTwo from "../assets/ImageTwo.png";
 
@@ -26,7 +32,7 @@ const WorkoutScreen = () => {
             />
             <View style={styles.viewStyleThree}>
               <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
-              <Text style={styles.textStyleFour}>I'm a little rusty</Text>
+              <Text style={styles.textStyleFour}>I'm a regular</Text>
             </View>
           </View>
 
@@ -37,9 +43,13 @@ const WorkoutScreen = () => {
             />
             <View style={styles.viewStyleThree}>
               <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
-              <Text style={styles.textStyleFour}>I'm a little rusty</Text>
+              <Text style={styles.textStyleFour}>A man, a machine</Text>
             </View>
           </View>
+
+          <TouchableOpacity style={styles.touchableOpacity}>
+            <Text style={styles.textStyleFive}>Next</Text>
+          </TouchableOpacity>
         </View>
       </ImageBackground>
     </View>
@@ -58,6 +68,7 @@ const styles = StyleSheet.create({
   },
   viewStyleOne: {
     paddingLeft: 15,
+    paddingTop: 200,
   },
   viewStyleTwo: {
     flexDirection: "row",
@@ -79,6 +90,17 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 20,
     fontWeight: "bold",
+  },
+  textStyleFour: {
+    color: "gray",
+    fontWeight: "bold",
+  },
+  touchableOpacity: {
+    backgroundColor: "#3d65ee",
+    alignItems: "center",
+    padding: 15,
+    marginTop: 50,
+    borderRadius: 15,
   },
 });
 

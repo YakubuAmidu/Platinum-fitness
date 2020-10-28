@@ -54,13 +54,19 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
   },
   iconStyleOne: {
-    fontSize: 40,
+    fontSize: 80,
+    width: 100,
+    padding: 8,
     color: "#fff",
     backgroundColor: "gold",
   },
   textStyleOne: {
     color: "#fff",
-    fontSize: 30,
+    fontSize: 40,
+    fontWeight: "bold",
+    marginBottom: 30,
+    marginTop: 40,
+    width: 300,
   },
   textStyleTwo: {
     color: "#fff",

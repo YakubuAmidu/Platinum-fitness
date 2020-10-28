@@ -17,15 +17,15 @@ const WorkoutScreen = () => {
           <Text style={styles.textStyleOne}>
             How often do you usually work out ?
           </Text>
-          <View style={styles.viewStyleTwo}>
+          <TouchableOpacity style={styles.viewStyleTwo}>
             <FontAwesome name="user" style={styles.iconStyleOne} />
             <View style={styles.viewStyleThree}>
               <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
               <Text style={styles.textStyleFour}>I'm a little rusty</Text>
             </View>
-          </View>
+          </TouchableOpacity>
 
-          <View style={styles.viewStyleTwo}>
+          <TouchableOpacity style={styles.viewStyleTwo}>
             <MaterialCommunityIcons
               name="human-male"
               style={styles.iconStyleOne}
@@ -34,9 +34,9 @@ const WorkoutScreen = () => {
               <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
               <Text style={styles.textStyleFour}>I'm a regular</Text>
             </View>
-          </View>
+          </TouchableOpacity>
 
-          <View style={styles.viewStyleTwo}>
+          <TouchableOpacity style={styles.viewStyleTwo}>
             <MaterialCommunityIcons
               name="human-handsup"
               style={styles.iconStyleOne}
@@ -45,7 +45,7 @@ const WorkoutScreen = () => {
               <Text style={styles.textStyleTwo}>0-1 workouts/week</Text>
               <Text style={styles.textStyleFour}>A man, a machine</Text>
             </View>
-          </View>
+          </TouchableOpacity>
 
           <TouchableOpacity style={styles.touchableOpacity}>
             <Text style={styles.textStyleFive}>Next</Text>

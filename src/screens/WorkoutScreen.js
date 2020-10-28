@@ -83,6 +83,8 @@ const styles = StyleSheet.create({
   },
   iconStyleOne: {
     fontSize: 40,
+    backgroundColor: "#000",
+    padding: 7,
     color: "#fff",
   },
   textStyleOne: {

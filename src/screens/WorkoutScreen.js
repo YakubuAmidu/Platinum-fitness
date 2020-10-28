@@ -102,6 +102,11 @@ const styles = StyleSheet.create({
     marginTop: 50,
     borderRadius: 15,
   },
+  textStyleFive: {
+    color: "#fff",
+    fontSize: 25,
+    fontWeight: "bold",
+  },
 });
 
 export default WorkoutScreen;

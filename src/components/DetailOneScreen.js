@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { EvilIcons } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
 import { View, Text, ImageBackground, StyleSheet } from "react-native";
 import ImageFour from "../assets/ImageFour.png";
 import ImageFive from "../assets/ImageFive.png";
@@ -33,13 +33,13 @@ class DetailOneScreen extends Component {
             Enter and record all your activities
           </Text>
           <Text style={styles.textStyleFive}>
-            From strength and endurance to mobility and yoga--featuring our
+            From strength and endurance to mobility and yoga -- featuring our
             trainers
           </Text>
         </View>
 
         <View style={styles.viewStyleFour}>
-          <EvilIcons name="star" size={24} color="black" />
+          <FontAwesome name="star" style={styles.iconStyleOne} />
           <View style={styles.viewStyleFive}>
             <Text style={styles.viewStyleSix}>Pro Account</Text>
             <Text style={styles.viewStyleSeven}>Monthly payment</Text>
@@ -109,6 +109,26 @@ const styles = StyleSheet.create({
   },
   textStyleFive: {
     fontSize: 20,
+  },
+  viewStyleFour: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "gray",
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginTop: 40,
+  },
+  iconStyleOne: {
+    fontSize: 40,
+    color: "blue",
+    backgroundColor: "lightblue",
+  },
+  viewStyleOne: {
+    marginHorizontal: 20,
+  },
+  viewStyleFive: {
+    marginHorizontal: 20,
   },
 });
 

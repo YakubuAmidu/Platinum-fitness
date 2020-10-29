@@ -12,6 +12,7 @@ import {
   Ionicons,
 } from "@expo/vector-icons";
 import ImageThree from "../assets/ImageThree.png";
+import DetailOneScreen from "../components/DetailOneScreen";
 
 const GoalScreen = ({ navigation }) => {
   return (
@@ -65,7 +66,7 @@ const GoalScreen = ({ navigation }) => {
           </View>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate("Goal")}
+            onPress={() => navigation.navigate("DetailOne")}
             style={styles.touchableOpacity}
           >
             <Text style={styles.textStyleFive}>Next</Text>

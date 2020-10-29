@@ -11,10 +11,10 @@ class DetailOneScreen extends Component {
 
         <View style={styles.viewStyleOne}>
           <ImageBackground source={ImageFour} style={styles.backgroundStyleOne}>
-            <Text> Hi</Text>
+            <Text style={styles.textStyleTwo}> Hi</Text>
           </ImageBackground>
           <ImageBackground source={ImageFive} style={styles.backgroundStyleTwo}>
-            <Text>Hello</Text>
+            <Text style={styles.textStyleThree}>Hello</Text>
           </ImageBackground>
         </View>
 
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: "right",
     paddingTop: 20,
+    paddingRight: 20,
     paddingBottom: 20,
     fontWeight: "bold",
   },
@@ -47,12 +48,21 @@ const styles = StyleSheet.create({
     width: 300,
     height: 150,
     marginBottom: 25,
-    borderRadius: 40,
+  },
+  textStyleTwo: {
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "bold",
   },
   backgroundStyleTwo: {
     alignSelf: "flex-start",
     width: 300,
     height: 150,
+  },
+  textStyleThree: {
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });
 

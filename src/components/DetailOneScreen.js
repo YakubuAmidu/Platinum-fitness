@@ -39,13 +39,18 @@ const styles = StyleSheet.create({
   },
   viewStyleOne: {
     alignItems: "center",
+    paddingRight: 20,
+    paddingLeft: 20,
   },
   backgroundStyleOne: {
+    alignSelf: "flex-end",
     width: 300,
     height: 150,
     marginBottom: 25,
+    borderRadius: 40,
   },
   backgroundStyleTwo: {
+    alignSelf: "flex-start",
     width: 300,
     height: 150,
   },

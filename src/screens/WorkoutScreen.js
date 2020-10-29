@@ -6,7 +6,11 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
-import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
+import {
+  FontAwesome,
+  FontAwesome5,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
 import ImageTwo from "../assets/ImageTwo.png";
 import GoalScreen from "./GoalScreen";
 
@@ -38,10 +42,7 @@ const WorkoutScreen = ({ navigation }) => {
           </View>
 
           <View style={styles.viewStyleTwo}>
-            <MaterialCommunityIcons
-              name="human-handsup"
-              style={styles.iconStyleOne}
-            />
+            <FontAwesome5 name="running" style={styles.iconStyleOne} />
             <View style={styles.viewStyleThree}>
               <Text style={styles.textStyleTwo}>5+ workouts/week</Text>
               <Text style={styles.textStyleFour}>A man, a machine</Text>

@@ -6,7 +6,11 @@ import {
   Text,
   StyleSheet,
 } from "react-native";
-import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
+import {
+  MaterialCommunityIcons,
+  FontAwesome5,
+  Ionicons,
+} from "@expo/vector-icons";
 import ImageThree from "../assets/ImageThree.png";
 
 const GoalScreen = ({ navigation }) => {
@@ -32,10 +36,7 @@ const GoalScreen = ({ navigation }) => {
           </View>
 
           <View style={styles.viewStyleTwo}>
-            <MaterialCommunityIcons
-              name="human-handsup"
-              style={styles.iconStyleOne}
-            />
+            <FontAwesome5 name="running" style={styles.iconStyleOne} />
             <View style={styles.viewStyleThree}>
               <Text style={styles.textStyleTwo}>Improve endurance</Text>
               <Text style={styles.textStyleFour}>
@@ -87,6 +88,7 @@ const styles = StyleSheet.create({
   },
   viewStyleOne: {
     paddingLeft: 15,
+    paddingRight: 15,
     paddingTop: 150,
   },
   viewStyleTwo: {
@@ -103,7 +105,7 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
   textStyleOne: {
-    fontSize: 40,
+    fontSize: 35,
     color: "#fff",
     fontWeight: "bold",
   },

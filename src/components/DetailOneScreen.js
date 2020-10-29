@@ -94,6 +94,22 @@ const styles = StyleSheet.create({
     width: 300,
     height: 150,
   },
+  viewStyleThree: {
+    paddingTop: 30,
+  },
+  textSThree: {
+    fontSize: 20,
+    color: "gray",
+    paddingBottom: 25,
+  },
+  textStyleFour: {
+    fontSize: 30,
+    fontWeight: "bold",
+    paddingBottom: 25,
+  },
+  textStyleFive: {
+    fontSize: 20,
+  },
 });
 
 export default DetailOneScreen;

@@ -21,7 +21,9 @@ class DetailTwoScreen extends Component {
         </View>
         <View style={styles.viewStyleFive}>
           <Text style={styles.textStyleFive}>Statistics</Text>
-          <Text style={styles.textStyleSix}>See All</Text>
+          <TouchableOpacity>
+            <Text style={styles.textStyleSix}>See All</Text>
+          </TouchableOpacity>
         </View>
         <View>
           <Text>Barchart</Text>
@@ -30,7 +32,9 @@ class DetailTwoScreen extends Component {
         <View style={styles.viewStyleSix}>
           <View style={styles.viewStyleSeven}>
             <Text style={styles.textStyleSeven}>Today's Activities</Text>
-            <Text style={styles.textStyleEight}>See All</Text>
+            <TouchableOpacity>
+              <Text style={styles.textStyleEight}>See All</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.viewStyleEight}>
             <View style={styles.viewStyleNine}>

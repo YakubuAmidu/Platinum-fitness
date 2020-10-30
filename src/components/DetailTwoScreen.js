@@ -39,9 +39,11 @@ class DetailTwoScreen extends Component {
             </View>
             <View style={styles.viewStyleTen}>
               <Text style={styles.textStyleTen}>1:16:03 Duration</Text>
-              <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-              <Text style={styles.textStyleTwelve}>Avg HR 98</Text>
-              <Text style={styles.textStyleThirteen}>Avg HR 98</Text>
+              <View>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+                <Text style={styles.textStyleTwelve}>Avg HR 98</Text>
+                <Text style={styles.textStyleThirteen}>Avg HR 98</Text>
+              </View>
             </View>
           </View>
         </View>
@@ -124,6 +126,15 @@ const styles = StyleSheet.create({
   viewStyleNine: {
     flexDirection: "row",
     marginBottom: 25,
+  },
+  viewStyleTen: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  textStyleTen: {
+    fontSize: 25,
+    width: 100,
   },
   textStyleNine: {
     marginHorizontal: 15,

@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     paddingTop: 10,
-    marginTop: 70,
   },
   viewStyleTwo: {
     alignItems: "center",

@@ -34,7 +34,7 @@ class DetailTwoScreen extends Component {
           </View>
           <View style={styles.viewStyleEight}>
             <View style={styles.viewStyleNine}>
-              <FontAwesome5 name="swimmer" size={24} color="black" />
+              <FontAwesome5 name="swimmer" size={24} color="#fff" />
               <Text style={styles.textStyleNine}>Swimming</Text>
             </View>
             <View style={styles.viewStyleTen}>
@@ -123,6 +123,13 @@ const styles = StyleSheet.create({
   },
   viewStyleNine: {
     flexDirection: "row",
+    marginBottom: 25,
+  },
+  textStyleNine: {
+    marginHorizontal: 15,
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
   },
 });
 

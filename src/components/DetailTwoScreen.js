@@ -44,13 +44,19 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontWeight: "bold",
   },
-  viewStyleThree: {
-    borderRadius: 100,
-  },
+  viewStyleThree: {},
   textStyleThree: {
     color: "#fff",
     fontSize: 40,
     backgroundColor: "blue",
+  },
+  viewStyleFour: {
+    backgroundColor: "#DCDCDC",
+    padding: 5,
+  },
+  textStyleFour: {
+    color: "blue",
+    fontWeight: "bold",
   },
 });
 

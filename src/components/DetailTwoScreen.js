@@ -18,10 +18,11 @@ class DetailTwoScreen extends Component {
             7 activities this week. Good job!
           </Text>
         </View>
-        <View>
-          <Text>Statistics</Text>
-          <Text>See All</Text>
+        <View style={styles.viewStyleFive}>
+          <Text style={styles.textStyleFive}>Statistics</Text>
+          <Text style={styles.textStyleSix}>See All</Text>
         </View>
+        <View></View>
       </View>
     );
   }
@@ -62,6 +63,19 @@ const styles = StyleSheet.create({
   textStyleFour: {
     color: "#1cafde",
     fontWeight: "bold",
+  },
+  viewStyleFive: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingTop: 20,
+  },
+  textStyleFive: {
+    fontSize: 30,
+    fontWeight: "bold",
+  },
+  textStyleSix: {
+    color: "#1cafde",
+    fontSize: 25,
   },
 });
 

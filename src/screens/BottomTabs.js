@@ -1,25 +1,29 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { SimpleLineIcons } from "@expo/vector-icons";
+import { SimpleLineIcons, Foundation, Entypo } from "@expo/vector-icons";
 
 const BottomTabs = () => {
   return (
     <View style={styles.viewStyleOne}>
-      <View>
-        <SimpleLineIcons name="screen-smartphone" size={24} color="black" />
-        <Text>My Day</Text>
+      <View style={styles.viewStyleTwo}>
+        <SimpleLineIcons name="screen-smartphone" size={30} color="#1cafde" />
+        <Text style={styles.textStyleThree}>My Day</Text>
       </View>
-      <View>
-        <SimpleLineIcons name="screen-smartphone" size={24} color="black" />
-        <Text>My Day</Text>
+      <View style={styles.viewStyleTwo}>
+        <Foundation name="graph-bar" size={30} color="gray" />
+        <Text style={styles.textStyleFour}>Goals</Text>
       </View>
-      <View>
-        <SimpleLineIcons name="screen-smartphone" size={24} color="black" />
-        <Text>My Day</Text>
+      <View style={styles.viewStyleTwo}>
+        <SimpleLineIcons name="fire" size={30} color="#FF8C00" />
+        <Text style={styles.textStyleFive}>Lets Go!</Text>
       </View>
-      <View>
-        <SimpleLineIcons name="screen-smartphone" size={24} color="black" />
-        <Text>My Day</Text>
+      <View style={styles.viewStyleTwo}>
+        <Entypo name="news" size={30} color="gray" />
+        <Text style={styles.textStyleSix}>News Feed</Text>
+      </View>
+      <View style={styles.viewStyleTwo}>
+        <Entypo name="user" size={30} color="gray" />
+        <Text style={styles.textStyleSeven}>Profile</Text>
       </View>
     </View>
   );
@@ -33,6 +37,28 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     paddingTop: 10,
     marginTop: 70,
+  },
+  viewStyleTwo: {
+    alignItems: "center",
+  },
+  textStyleThree: {
+    color: "#1cafde",
+  },
+  textStyleFour: {
+    marginTop: 5,
+    color: "gray",
+  },
+  textStyleFive: {
+    marginTop: 5,
+    color: "#FF8C00",
+  },
+  textStyleSix: {
+    marginTop: 5,
+    color: "gray",
+  },
+  textStyleSeven: {
+    marginTop: 5,
+    color: "gray",
   },
 });
 

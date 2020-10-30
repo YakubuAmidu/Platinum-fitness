@@ -14,7 +14,7 @@ class DetailTwoScreen extends Component {
   render() {
     return (
       <View style={styles.viewStyleOne}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <Text style={styles.textStyleOne}>THURSDAY, 12 APRIL</Text>
           <View style={styles.viewStyleTwo}>
             <Text style={styles.textStyleTwo}>My Day</Text>
@@ -34,8 +34,13 @@ class DetailTwoScreen extends Component {
               <Text style={styles.textStyleSix}>See All</Text>
             </TouchableOpacity>
           </View>
-          <View>
-            <Text>Barchart</Text>
+          <View style={styles.viewStyleBig}>
+            <View style={styles.viewStyleBigOne}></View>
+            <View style={styles.viewStyleBigTwo}></View>
+            <View style={styles.viewStyleBigThree}></View>
+            <View style={styles.viewStyleBigFour}></View>
+            <View style={styles.viewStyleBigFive}></View>
+            <View style={styles.viewStyleBigSix}></View>
           </View>
 
           <View style={styles.viewStyleSix}>
@@ -132,6 +137,53 @@ const styles = StyleSheet.create({
   textStyleSix: {
     color: "#1cafde",
     fontSize: 25,
+  },
+  viewStyleBig: {
+    flexDirection: "row",
+    backgroundColor: "gold",
+    alignItems: "flex-end",
+    justifyContent: "space-around",
+    paddingTop: 30,
+    paddingBottom: 10,
+  },
+  viewStyleBigOne: {
+    paddingTop: 100,
+    paddingRight: 10,
+    paddingLeft: 10,
+    backgroundColor: "gray",
+  },
+  viewStyleBigTwo: {
+    paddingTop: 120,
+    paddingRight: 10,
+    paddingLeft: 10,
+    backgroundColor: "gray",
+  },
+  viewStyleBigThree: {
+    paddingTop: 140,
+    paddingRight: 10,
+    paddingLeft: 10,
+    backgroundColor: "blue",
+  },
+  viewStyleBigFour: {
+    paddingTop: 160,
+    paddingRight: 10,
+    paddingLeft: 10,
+    backgroundColor: "blue",
+  },
+  viewStyleBigFive: {
+    paddingTop: 180,
+    paddingRight: 10,
+    paddingLeft: 10,
+    backgroundColor: "green",
+  },
+  viewStyleBigSix: {
+    paddingTop: 200,
+    paddingRight: 10,
+    paddingLeft: 10,
+    backgroundColor: "green",
+  },
+  textStyleBigTwo: {
+    fontSize: 15,
   },
   viewStyleSix: {
     marginTop: 20,

@@ -8,10 +8,12 @@ class DetailTwoScreen extends Component {
         <Text style={styles.textStyleOne}>THURSDAY, 12 APRIL</Text>
         <View style={styles.viewStyleTwo}>
           <Text style={styles.textStyleTwo}>My Day</Text>
-          <Text style={styles.textStyleThree}>+</Text>
+          <View style={styles.viewStyleThree}>
+            <Text style={styles.textStyleThree}>+</Text>
+          </View>
         </View>
 
-        <View style={styles.viewStyleThree}>
+        <View style={styles.viewStyleFour}>
           <Text style={styles.textStyleFour}>
             7 activities this week. Good job!
           </Text>
@@ -34,12 +36,21 @@ const styles = StyleSheet.create({
   },
   viewStyleTwo: {
     flexDirection: "row",
+    alignItems: "center",
     justifyContent: "space-between",
     paddingBottom: 10,
   },
   textStyleTwo: {
     fontSize: 35,
     fontWeight: "bold",
+  },
+  viewStyleThree: {
+    borderRadius: 100,
+  },
+  textStyleThree: {
+    color: "#fff",
+    fontSize: 40,
+    backgroundColor: "blue",
   },
 });
 

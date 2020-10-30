@@ -41,8 +41,8 @@ class DetailTwoScreen extends Component {
               <Text style={styles.textStyleTen}>1:16:03 Duration</Text>
               <View>
                 <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                <Text style={styles.textStyleTwelve}>Avg HR 98</Text>
-                <Text style={styles.textStyleThirteen}>Avg HR 98</Text>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
               </View>
             </View>
           </View>
@@ -135,6 +135,11 @@ const styles = StyleSheet.create({
   textStyleTen: {
     fontSize: 25,
     width: 100,
+  },
+  textStyleEleven: {
+    fontSize: 25,
+    color: "#fff",
+    margin: 10,
   },
   textStyleNine: {
     marginHorizontal: 15,

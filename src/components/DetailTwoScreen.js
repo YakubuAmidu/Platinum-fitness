@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import BottomTabs from "../screens/BottomTabs";
 import { FontAwesome5 } from "@expo/vector-icons";
 
 class DetailTwoScreen extends Component {
@@ -66,6 +67,7 @@ class DetailTwoScreen extends Component {
             </View>
           </View>
         </View>
+        <BottomTabs />
       </View>
     );
   }

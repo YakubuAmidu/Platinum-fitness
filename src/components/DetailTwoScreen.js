@@ -9,83 +9,85 @@ import {
 } from "react-native";
 import BottomTabs from "../screens/BottomTabs";
 import { FontAwesome5 } from "@expo/vector-icons";
+import DetailThreeScreen from "../components/DetailThreeScreen";
 
-class DetailTwoScreen extends Component {
-  render() {
-    return (
-      <View style={styles.viewStyleOne}>
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <Text style={styles.textStyleOne}>THURSDAY, 12 APRIL</Text>
-          <View style={styles.viewStyleTwo}>
-            <Text style={styles.textStyleTwo}>My Day</Text>
-            <TouchableOpacity style={styles.viewStyleThree}>
-              <Text style={styles.textStyleThree}>+</Text>
-            </TouchableOpacity>
-          </View>
+const DetailTwoScreen = ({ navigation }) => {
+  return (
+    <View style={styles.viewStyleOne}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Text style={styles.textStyleOne}>THURSDAY, 12 APRIL</Text>
+        <View style={styles.viewStyleTwo}>
+          <Text style={styles.textStyleTwo}>My Day</Text>
+          <TouchableOpacity style={styles.viewStyleThree}>
+            <Text style={styles.textStyleThree}>+</Text>
+          </TouchableOpacity>
+        </View>
 
-          <View style={styles.viewStyleFour}>
-            <Text style={styles.textStyleFour}>
-              7 activities this week. Good job!
-            </Text>
-          </View>
-          <View style={styles.viewStyleFive}>
-            <Text style={styles.textStyleFive}>Statistics</Text>
+        <View style={styles.viewStyleFour}>
+          <Text style={styles.textStyleFour}>
+            7 activities this week. Good job!
+          </Text>
+        </View>
+        <View style={styles.viewStyleFive}>
+          <Text style={styles.textStyleFive}>Statistics</Text>
+          <TouchableOpacity>
+            <Text style={styles.textStyleSix}>See All</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.viewStyleBig}>
+          <View style={styles.viewStyleBigOne}></View>
+          <View style={styles.viewStyleBigTwo}></View>
+          <View style={styles.viewStyleBigThree}></View>
+          <View style={styles.viewStyleBigFour}></View>
+          <View style={styles.viewStyleBigFive}></View>
+          <View style={styles.viewStyleBigSix}></View>
+        </View>
+
+        <View style={styles.viewStyleSix}>
+          <View style={styles.viewStyleSeven}>
+            <Text style={styles.textStyleSeven}>Today's Activities</Text>
             <TouchableOpacity>
-              <Text style={styles.textStyleSix}>See All</Text>
+              <Text style={styles.textStyleEight}>See All</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.viewStyleBig}>
-            <View style={styles.viewStyleBigOne}></View>
-            <View style={styles.viewStyleBigTwo}></View>
-            <View style={styles.viewStyleBigThree}></View>
-            <View style={styles.viewStyleBigFour}></View>
-            <View style={styles.viewStyleBigFive}></View>
-            <View style={styles.viewStyleBigSix}></View>
-          </View>
-
-          <View style={styles.viewStyleSix}>
-            <View style={styles.viewStyleSeven}>
-              <Text style={styles.textStyleSeven}>Today's Activities</Text>
-              <TouchableOpacity>
-                <Text style={styles.textStyleEight}>See All</Text>
-              </TouchableOpacity>
+          <View style={styles.viewStyleEight}>
+            <View style={styles.viewStyleNine}>
+              <FontAwesome5 name="swimmer" size={24} color="#fff" />
+              <Text style={styles.textStyleNine}>Swimming</Text>
             </View>
-            <View style={styles.viewStyleEight}>
-              <View style={styles.viewStyleNine}>
-                <FontAwesome5 name="swimmer" size={24} color="#fff" />
-                <Text style={styles.textStyleNine}>Swimming</Text>
-              </View>
-              <View style={styles.viewStyleTen}>
-                <Text style={styles.textStyleTen}>1:16:03 Duration</Text>
-                <View>
-                  <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                  <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                  <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                </View>
-              </View>
-            </View>
-
-            <View style={styles.viewStyleEight}>
-              <View style={styles.viewStyleNine}>
-                <FontAwesome5 name="running" size={24} color="#fff" />
-                <Text style={styles.textStyleNine}>Running</Text>
-              </View>
-              <View style={styles.viewStyleTen}>
-                <Text style={styles.textStyleTen}>1:16:03 Duration</Text>
-                <View>
-                  <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                  <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                  <Text style={styles.textStyleEleven}>Avg HR 98</Text>
-                </View>
+            <View style={styles.viewStyleTen}>
+              <Text style={styles.textStyleTen}>1:16:03 Duration</Text>
+              <View>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
               </View>
             </View>
           </View>
-        </ScrollView>
-        <BottomTabs />
-      </View>
-    );
-  }
-}
+
+          <TouchableOpacity
+            onPress={() => navigation.navigate("DetailThree")}
+            style={styles.viewStyleEight}
+          >
+            <View style={styles.viewStyleNine}>
+              <FontAwesome5 name="running" size={24} color="#fff" />
+              <Text style={styles.textStyleNine}>Running</Text>
+            </View>
+            <View style={styles.viewStyleTen}>
+              <Text style={styles.textStyleTen}>1:16:03 Duration</Text>
+              <View>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+                <Text style={styles.textStyleEleven}>Avg HR 98</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
+      <BottomTabs />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   viewStyleOne: {
@@ -95,6 +97,7 @@ const styles = StyleSheet.create({
   },
   textStyleOne: {
     fontSize: 15,
+    marginTop: 10,
     color: "gray",
     paddingBottom: 10,
   },
@@ -140,7 +143,7 @@ const styles = StyleSheet.create({
   },
   viewStyleBig: {
     flexDirection: "row",
-    backgroundColor: "gold",
+    backgroundColor: "#DCDCDC",
     alignItems: "flex-end",
     justifyContent: "space-around",
     paddingTop: 30,

@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
   },
   viewStyleOne: {
     paddingLeft: 15,
+    paddingRight: 15,
     paddingTop: 200,
   },
   viewStyleTwo: {

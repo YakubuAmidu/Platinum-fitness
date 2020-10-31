@@ -9,7 +9,6 @@ import {
 } from "react-native";
 import BottomTabs from "../screens/BottomTabs";
 import { FontAwesome5 } from "@expo/vector-icons";
-import DetailThreeScreen from "../components/DetailThreeScreen";
 
 const DetailTwoScreen = ({ navigation }) => {
   return (
